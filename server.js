@@ -1,3 +1,4 @@
+// https://embed.plnkr.co/plunk/u0qJBc
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 5000;
@@ -30,4 +31,4 @@ app.use(flash());
 require('./app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
 
 app.listen(port);
-console.log('Server running on ' + port);
+console.log(`Server running on ${port}`);
